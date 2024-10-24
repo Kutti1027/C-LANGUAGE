@@ -1,0 +1,15 @@
+#include <stdio.h>
+void flower(int);
+void flower(int a)
+{
+    if (a==4)
+        return;
+    printf("  %d",a+10);
+    flower(a+1);
+    printf("  %d",a);
+}
+
+void main()
+{
+    flower(1);
+}
